@@ -7,6 +7,8 @@ import Store from './Store'; // 追加
 const container = document.getElementById('contents');
 
 ReactDom.render(
-    <p>こんにちは、世界</p>,
+    <Provider store={Store}>
+        <UserForm />
+    </Provider>,
     container,
 );
